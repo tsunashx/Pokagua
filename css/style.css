@@ -1,0 +1,910 @@
+:root {
+            --primary-blue: rgba(39, 131, 245, 1);
+            --primary-yellow: rgba(255, 195, 0, 1);
+            --white: #ffffff;
+            --black: #1a1a1a;
+            --light-gray: #f5f5f5;
+            --medium-gray: #e0e0e0;
+            --dark-gray: #666666;
+            --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+            --common-color: #4CAF50; /* 常見 - 綠色 */
+            --uncommon-color: #2196F3; /* 少見 - 藍色 */
+            --rare-color: #9C27B0; /* 稀有 - 紫色 */
+            --very-rare-color: #FF9800; /* 罕有 - 金色/橙色 */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--white);
+            color: var(--black);
+            line-height: 1.6;
+        }
+
+        /* 頁首樣式 */
+        header {
+            background-color: var(--primary-blue);
+            padding: 0 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            font-size: 2rem;
+            padding:1rem 0rem;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 0;
+            height: 100%;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 1.5rem 1.5rem;
+            display: flex;
+            align-items: center;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        nav a:hover, nav a.active {
+            background-color: transparent;
+        }
+
+        nav a:hover::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: var(--primary-blue);
+        }
+
+        nav a.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: var(--primary-yellow);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* 主內容區域 */
+        main {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* 搜尋區域 */
+        .search-section {
+            background-color: var(--white);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 2rem;
+        }
+
+        .search-container {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .search-bar {
+            flex: 1;
+            min-width: 250px;
+            position: relative;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 1rem 1rem 1rem 3rem;
+            border: 2px solid var(--medium-gray);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .search-bar input:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--dark-gray);
+        }
+
+        .filter-btn, .sort-btn {
+            background-color: var(--light-gray);
+            border: 2px solid var(--medium-gray);
+            border-radius: 8px;
+            padding: 1rem 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+        }
+
+        .filter-btn:hover, .sort-btn:hover {
+            background-color: var(--medium-gray);
+        }
+
+        .filter-btn {
+            background-color: var(--primary-yellow);
+            border-color: var(--primary-yellow);
+        }
+
+        .sort-dropdown {
+            position: relative;
+        }
+
+        .sort-options {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            padding: 0.5rem 0;
+            min-width: 220px;
+            z-index: 10;
+            display: none;
+        }
+
+        .sort-options.active {
+            display: block;
+        }
+
+        .sort-options button {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: none;
+            background: none;
+            text-align: left;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .sort-options button:hover {
+            background-color: var(--light-gray);
+        }
+
+        /* 進階篩選面板 */
+        .advanced-filter {
+            background-color: var(--light-gray);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            display: none;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .advanced-filter.active {
+            display: grid;
+        }
+
+        .filter-category h4 {
+            margin-bottom: 0.8rem;
+            color: var(--primary-blue);
+        }
+
+        .filter-options {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .filter-option {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .filter-actions {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--medium-gray);
+        }
+
+        .filter-actions button {
+            padding: 0.6rem 1.2rem;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-apply {
+            background-color: var(--primary-blue);
+            color: var(--white);
+        }
+
+        .filter-apply:hover {
+            background-color: #1a73e8;
+        }
+
+        .filter-cancel {
+            background-color: var(--medium-gray);
+            color: var(--black);
+        }
+
+        .filter-cancel:hover {
+            background-color: #d0d0d0;
+        }
+
+        /* 類別滑動條 */
+        .category-scroll {
+            overflow-x: auto;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            scrollbar-width: thin;
+        }
+
+        .category-list {
+            display: flex;
+            gap: 0.8rem;
+            min-width: max-content;
+        }
+
+        .category-btn {
+            background-color: var(--white);
+            
+            border: 2px solid var(--medium-gray);
+            border-radius: 20px;
+            padding: 0.6rem 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: var(--transition);
+        }
+
+        .category-btn:hover {
+            background-color: var(--medium-gray);
+            border-color: var(--medium-gray);
+        }
+
+        .category-btn.active {
+            background-color: var(--black);
+            color: var(--white);
+            border-color: var(--black);
+        }
+
+        /* 動物卡片 */
+        .animal-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (max-width: 1024px) {
+            .animal-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .animal-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .animal-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .animal-card {
+            background-color: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .animal-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .animal-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .animal-info {
+            padding: 1.2rem;
+        }
+
+        .animal-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 0.3rem;
+        }
+
+        .scientific-name {
+            font-style: italic;
+            color: var(--dark-gray);
+            margin-bottom: 0.5rem;
+        }
+
+        .animal-category, .animal-rarity {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .animal-category {
+            background-color: var(--medium-gray);
+            color: var(--dark-gray);
+        }
+
+        .animal-rarity {
+            font-weight: 700;
+        }
+
+        .animal-rarity.common {
+            background-color: var(--common-color);
+            color: var(--white);
+        }
+
+        .animal-rarity.uncommon {
+            background-color: var(--uncommon-color);
+            color: var(--white);
+        }
+
+        .animal-rarity.rare {
+            background-color: var(--rare-color);
+            color: var(--white);
+        }
+
+        .animal-rarity.very-rare {
+            background-color: var(--very-rare-color);
+            color: var(--white);
+        }
+
+        /* IUCN 狀態顏色 */
+        .iucn-status {
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .iucn-status.lc {
+            background-color: #006666; /* 無危 - 綠色 */
+            color: var(--white);
+        }
+
+        .iucn-status.nt {
+            background-color: #006666; /* 近危 - 淺綠色 */
+            color: #99CC99;
+        }
+
+        .iucn-status.vu {
+            background-color: #CC9900; /* 易危 - 黃色 */
+            color:#FFFFCC;
+        }
+
+        .iucn-status.en {
+            background-color: #CC6633; /* 瀕危 - 橙色 */
+            color: #FFCC99;
+        }
+
+        .iucn-status.cr {
+            background-color: #CC3333; /* 極危 - 紅色 */
+            color: #FFCCCC;
+        }
+
+        .iucn-status.ew {
+            background-color: var(--black); /* 野外滅絕 - 紫色 */
+            color:var(--white);
+        }
+
+        .iucn-status.ex {
+            background-color: var(--black); /* 滅絕 - 灰色 */
+            color: #CC3333;
+        }
+
+        .iucn-status.dd {
+            background-color: #607D8B; /* 數據缺乏 - 藍灰色 */
+        }
+
+        /* 動物詳情頁面 */
+        .animal-detail-page {
+            display: none;
+        }
+
+        .detail-header {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background-color: var(--white);
+            border: none;
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: var(--card-shadow);
+            z-index: 2;
+            transition: var(--transition);
+        }
+
+        .back-btn:hover {
+            background-color: var(--black);
+            color: var(--white);
+        }
+
+        .detail-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .detail-info {
+            background-color: var(--white);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: var(--card-shadow);
+        }
+
+        .detail-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-name h2 {
+            font-size: 2.2rem;
+            color: var(--primary-blue);
+            margin-bottom: 0.3rem;
+        }
+
+        .detail-scientific {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--dark-gray);
+        }
+
+        .detail-meta {
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .detail-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .detail-item {
+            background-color: var(--light-gray);
+            padding: 1rem;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .detail-label {
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+            margin-bottom: 0.5rem;
+        }
+
+        .detail-value {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary-blue);
+        }
+
+        .detail-description {
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .detail-tabs {
+            display: flex;
+            border-bottom: 2px solid var(--medium-gray);
+            margin-bottom: 1.5rem;
+        }
+
+        .tab-btn {
+            padding: 0.8rem 1.5rem;
+            background: none;
+            border: none;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            color: var(--dark-gray);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .tab-btn.active {
+            color: var(--primary-blue);
+        }
+
+        .tab-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary-blue);
+        }
+
+        .tab-content {
+            display: none;
+            min-height: 300px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .tab-list {
+            list-style: none;
+        }
+
+        .tab-list li {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .tab-list li:before {
+            content: '•';
+            color: var(--primary-yellow);
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -0.4rem;
+        }
+
+        .tab-title {
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 0.3rem;
+        }
+
+        #map {
+            height: 300px;
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        /* 小知識頁面 */
+        .knowledge-page {
+            display: none;
+        }
+
+        .knowledge-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .knowledge-item {
+            background-color: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            display: flex;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .knowledge-item {
+                flex-direction: column;
+            }
+        }
+
+        .knowledge-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .knowledge-image {
+            width: 250px;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .knowledge-image {
+                width: 100%;
+                height: 200px;
+            }
+        }
+
+        .knowledge-content {
+            padding: 1.5rem;
+            flex: 1;
+        }
+
+        .knowledge-title {
+            font-size: 1.4rem;
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .knowledge-subtitle {
+            color: var(--dark-gray);
+            font-size: 1rem;
+        }
+
+        /* 關於我們頁面 */
+        .about-page {
+            display: none;
+        }
+
+        .about-content {
+            background-color: var(--white);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: var(--card-shadow);
+        }
+
+        .about-title {
+            font-size: 2rem;
+            color: var(--primary-blue);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .about-section {
+            margin-bottom: 2rem;
+        }
+
+        .about-section h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .about-section p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .stat-item {
+            background-color: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--dark-gray);
+            font-weight: 600;
+        }
+
+        /* 知識文章頁面 */
+        .article-page {
+            display: none;
+        }
+
+        .article-content {
+            background-color: var(--white);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: var(--card-shadow);
+        }
+
+        .article-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+
+        .article-title {
+            font-size: 2rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .article-body {
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .article-body p {
+            margin-bottom: 1.5rem;
+        }
+
+        /* 頁尾樣式 */
+        footer {
+            background-color: var(--black);
+            color: var(--white);
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-yellow);
+        }
+
+        /* 響應式設計 */
+        @media (max-width: 768px) {
+            header {
+                padding: 0 1rem;
+            }
+            
+            .header-container {
+                flex-wrap: wrap;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            nav {
+                width: 100%;
+                margin-top: 0;
+                display: none;
+            }
+            
+            nav.active {
+                display: block;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            nav a {
+                padding: 1rem;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            
+            nav a:hover::after, nav a.active::after {
+                display: none;
+            }
+            
+            main {
+                padding: 1rem;
+            }
+            
+            .search-container {
+                flex-direction: column;
+            }
+            
+            .filter-btn, .sort-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
