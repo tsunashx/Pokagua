@@ -1,0 +1,454 @@
+[
+  {
+    "id": 1,
+    "name": "鯨鯊",
+    "scientific": "Rhincodon typus",
+    "category": "shark",
+    "rarity": "rare",
+    "size": "giant",
+    "depth": "sunlight",
+    "social": "solitary",
+    "habitat": "open-ocean",
+    "traits": ["filter-feeder", "gentle", "migratory"],
+    "image": "images/sharks/whale shark.jpg",
+    "description": "鯨鯊是現存世界上體型最大的魚類，身長可達18公尺以上。儘管體型龐大，但鯨鯊是濾食性動物，主要攝食浮游生物和小型魚類。牠們性格溫和，移動緩慢，常出現在熱帶和溫帶海洋的表層水域。鯨鯊具有獨特的斑點花紋，每隻個體的斑點排列都不同，可用於識別個體。",
+    "iucn": "EN",
+    "iucnText": "瀕危",
+    "features": [
+      {
+        "title": "體型與外觀",
+        "desc": "鯨鯊擁有寬闊扁平的頭部，巨大的口部可寬達1.5公尺，體表佈滿白色斑點和橫紋。"
+      },
+      {
+        "title": "濾食系統",
+        "desc": "鯨鯊透過吸水過濾浮游生物，每小時可過濾超過6000公升的海水。"
+      },
+      {
+        "title": "皮膚結構",
+        "desc": "鯨鯊皮膚厚度可達10公分，具有減阻功能，有助於其在水中高效移動。"
+      },
+      {
+        "title": "壽命",
+        "desc": "鯨鯊壽命可達70-100年，是海洋中最長壽的魚類之一。"
+      }
+    ],
+    "behavior": [
+      {
+        "title": "遷徙行為",
+        "desc": "鯨鯊會進行長距離季節性遷徙，追隨浮游生物大量繁殖的海域。"
+      },
+      {
+        "title": "覓食方式",
+        "desc": "鯨鯊會垂直覓食，白天在深水區，夜晚則上升到表層水域攝食。"
+      },
+      {
+        "title": "繁殖習性",
+        "desc": "鯨鯊是卵胎生動物，雌性一次可懷孕300多個胚胎，孕期可能長達數年。"
+      },
+      {
+        "title": "社交行為",
+        "desc": "鯨鯊通常獨居，但在食物豐富的區域會形成臨時性群體。"
+      }
+    ],
+    "knowledge": [
+      {
+        "title": "發現歷史",
+        "desc": "鯨鯊於1828年首次被科學描述，但直到1980年代才開始有系統的研究。"
+      },
+      {
+        "title": "保育現狀",
+        "desc": "由於漁業副捕獲和船隻撞擊等威脅，鯨鯊數量在過去75年減少了50%以上。"
+      },
+      {
+        "title": "研究重要性",
+        "desc": "鯨鯊被稱為「海洋中的駱駝」，其遷徙模式有助於科學家了解海洋生態系統。"
+      },
+      {
+        "title": "生態角色",
+        "desc": "作為頂級濾食者，鯨鯊在控制浮游生物數量和營養循環中扮演重要角色。"
+      }
+    ],
+    "locations": [
+      {
+        "place": "澳大利亞",
+        "detail": "寧格魯礁 (3-6月)"
+      },
+      {
+        "place": "墨西哥",
+        "detail": "加利福尼亞灣 (5-9月)"
+      },
+      {
+        "place": "菲律賓",
+        "detail": "董索與奧斯洛布 (全年，11-5月高峰)"
+      },
+      {
+        "place": "馬爾地夫",
+        "detail": "阿里環礁 (8-11月)"
+      },
+      {
+        "place": "台灣",
+        "detail": "東部海域 (4-9月)"
+      }
+    ],
+    "locationIntro": "鯨鯊分佈於全球熱帶和溫帶海域，常見於以下地區："
+  },
+  {
+  "id": 2,
+  "name": "大白鯊",
+  "scientific": "Carcharodon carcharias",
+  "category": "shark",
+  "rarity": "rare",
+  "size": "large",
+  "depth": "surface to 250m",
+  "social": "solitary",
+  "habitat": "coastal and offshore",
+  "traits": ["apex-predator", "powerful", "curious"],
+  "image": "images/sharks/white shark.jpg",
+  "description": "大白鯊是海洋中最著名的頂級掠食者之一，體長可達6公尺以上，體重超過2噸。以其強大的顎部、鋸齒狀牙齒和流線型身軀聞名。大白鯊並非盲目攻擊人類的怪物，而是聰明、好奇的掠食者，其攻擊行為常源於探索或誤認。",
+  "iucn": "VU",
+  "iucnText": "易危",
+  "features": [
+    {
+      "title": "體型與力量",
+      "desc": "擁有厚重的紡錘形身軀，背鰭高聳，尾鰭呈新月形，提供強大的推進力。"
+    },
+    {
+      "title": "感官系統",
+      "desc": "具有極佳的嗅覺（可偵測數公里外的血跡）、電感受器（偵測生物電場）及視覺。"
+    },
+    {
+      "title": "牙齒結構",
+      "desc": "呈三角形鋸齒狀，可輕易撕裂獵物，且終生不斷更換，一生可能換牙數千顆。"
+    },
+    {
+      "title": "體溫調節",
+      "desc": "部分內溫性，能維持體溫高於周圍水溫，有助於在寒冷水域活動及提升代謝率。"
+    }
+  ],
+  "behavior": [
+    {
+      "title": "狩獵策略",
+      "desc": "常採用「突襲式攻擊」，從深處快速向上衝刺，有時會將獵物擊出水面。"
+    },
+    {
+      "title": "遷徙模式",
+      "desc": "部分個體會進行跨洋長距離遷徙，例如從南非到澳洲，科學家尚不完全了解其原因。"
+    },
+    {
+      "title": "社交與等級",
+      "desc": "基本獨居，偶有鬆散聚集。相遇時會透過身體語言（如拱背、擺動）建立支配關係。"
+    },
+    {
+      "title": "繁殖",
+      "desc": "卵胎生，孕期約12-18個月，一胎可產2-10隻幼鯊，幼鯊出生即須獨立。"
+    }
+  ],
+  "knowledge": [
+    {
+      "title": "文化形象",
+      "desc": "因電影《大白鯊》而被嚴重妖魔化，實際對人類的致命攻擊極為罕見。"
+    },
+    {
+      "title": "生態地位",
+      "desc": "作為頂級掠食者，對維持海洋生態平衡（如控制海豹等獵物數量）至關重要。"
+    },
+    {
+      "title": "研究與保育",
+      "desc": "衛星標記研究揭示了其複雜的遷徙路徑。受漁業（兼捕、魚翅）及棲地破壞威脅。"
+    },
+    {
+      "title": "壽命與成長",
+      "desc": "壽命可達70年以上，但生長緩慢，性成熟晚（雄性約26年，雌性約33年），使其族群易受衝擊。"
+    }
+  ],
+  "locations": [
+    {
+      "place": "南非",
+      "detail": "杭斯拜與海豹島 (觀鯊高峰5-10月)"
+    },
+    {
+      "place": "美國",
+      "detail": "加州法拉隆群島與墨西哥瓜達盧佩島 (8-10月)"
+    },
+    {
+      "place": "澳大利亞",
+      "detail": "南澳尼普頓群島 (1-6月)"
+    },
+    {
+      "place": "紐西蘭",
+      "detail": "斯圖爾特島周邊海域 (全年)"
+    },
+    {
+      "place": "地中海",
+      "detail": "馬爾他與西西里島海域 (零星出現)"
+    }
+  ],
+  "locationIntro": "大白鯊分佈廣泛但零散，全球溫帶與亞熱帶沿海水域皆有機會發現其蹤跡，常見於海豹、海獅聚集地附近："
+},
+  {
+  "id": 3,
+  "name": "雙髻鯊",
+  "scientific": "Sphyrnidae",
+  "category": "shark",
+  "rarity": "uncommon",
+  "size": "medium to large",
+  "depth": "surface to 300m",
+  "social": "social",
+  "habitat": "coastal, pelagic",
+  "traits": ["schooling", "distinctive-head", "active-hunter"],
+  "image": "images/sharks/hammerhead shark.jpg",
+  "description": "雙髻鯊以其獨特如鎚子般的頭部（頭鰭）聞名，此結構能增強其感官能力。多為社會性物種，常成群結隊出現，形成壯觀的鯊魚群。從小型到大型種類皆有，有些種類會進行大規模季節性聚集。",
+  "iucn": "Varies by species (從EN到LC)",
+  "iucnText": "視物種而定",
+  "features": [
+    {
+      "title": "頭部結構",
+      "desc": "扁平的頭鰭（頭翼）上分布雙眼與鼻孔，提供360度垂直視野與更佳的立體嗅覺定位能力。"
+    },
+    {
+      "title": "電感受器",
+      "desc": "頭部下方羅倫氏壺腹分布密集，能偵測沙底獵物（如魟魚）發出的微弱生物電場。"
+    },
+    {
+      "title": "身體形態",
+      "desc": "身體流線，第一背鰭高而鐮刀狀，體色通常為灰褐至橄欖綠，腹部為白色。"
+    },
+    {
+      "title": "種類差異",
+      "desc": "包括大雙髻鯊（最大，瀕危）、鏟頭雙髻鯊（常見，群體規模大）、翼頭雙髻鯊（頭鰭最寬）等。"
+    }
+  ],
+  "behavior": [
+    {
+      "title": "群體行為",
+      "desc": "白天常在特定地點（如海底山、峭壁）形成數十至數百隻的魚群，可能用於社交、求偶或防禦。"
+    },
+    {
+      "title": "狩獵方式",
+      "desc": "利用頭部掃過海床，探測隱藏的獵物，並用頭部壓制魟魚等扁平獵物後再進行咬食。"
+    },
+    {
+      "title": "遷徙與聚集",
+      "desc": "有些物種會進行季節性遷徙，並在特定地點（如哥斯大黎加可可島）形成壯觀的數千隻交配群。"
+    },
+    {
+      "title": "夜間活動",
+      "desc": "夜晚常分散到較深水域或開闊海域單獨覓食，白天則返回聚集地休息或社交。"
+    }
+  ],
+  "knowledge": [
+    {
+      "title": "感官優勢",
+      "desc": "其頭部形狀被認為是感官功能的「極致進化」，整合了視覺、嗅覺和電感受器，成為高效的掃描平台。"
+    },
+    {
+      "title": "保育威脅",
+      "desc": "因魚翅貿易價值高而遭大量捕撈，許多物種數量銳減。其群聚習性也使其更容易被一網打盡。"
+    },
+    {
+      "title": "研究發現",
+      "desc": "研究顯示雙髻鯊群體有複雜的社會結構，並非隨機聚集。部分個體會形成長期穩定的同伴關係。"
+    },
+    {
+      "title": "生態角色",
+      "desc": "作為中上層掠食者，幫助控制魟魚、烏賊及各種魚類的數量，維持珊瑚礁及沿岸生態平衡。"
+    }
+  ],
+  "locations": [
+    {
+      "place": "哥斯大黎加",
+      "detail": "可可島 (大型雙髻鯊群，5-11月)"
+    },
+    {
+      "place": "厄瓜多",
+      "detail": "加拉巴哥群島 (鏟頭雙髻鯊群，全年)"
+    },
+    {
+      "place": "巴哈馬",
+      "detail": "比米尼 (大雙髻鯊聚集地，冬季)"
+    },
+    {
+      "place": "馬爾地夫",
+      "detail": "阿里環礁 & 北馬累環礁 (1-4月高峰)"
+    },
+    {
+      "place": "南非",
+      "detail": "東岸外海 (季節性遷徙路徑)"
+    }
+  ],
+  "locationIntro": "雙髻鯊廣泛分佈於全球熱帶及溫帶溫暖海域，從沿岸、潟湖到外洋均有其蹤影，以下為著名觀測點："
+},
+  {
+  "id": 4,
+  "name": "格陵蘭睡鯊",
+  "scientific": "Somniosus microcephalus",
+  "category": "shark",
+  "rarity": "very rare",
+  "size": "large to giant",
+  "depth": "200m to 2000m+",
+  "social": "solitary",
+  "habitat": "deep-sea, arctic",
+  "traits": ["long-lived", "slow-moving", "toxic-flesh"],
+  "image": "images/greenland shark.jpg",
+  "description": "格陵蘭睡鯊是地球上最神秘、最長壽的脊椎動物之一，生活在北大西洋和北極冰寒的深海中。以其極度緩慢的動作（時速僅約1公里）、長壽命（可達400年以上）和肉中含有的三甲胺氧化物（具毒性）而聞名。牠們是真正的深海居民，適應了黑暗、高壓和接近冰點的環境。",
+  "iucn": "NT",
+  "iucnText": "近危",
+  "features": [
+    {
+      "title": "外觀與體型",
+      "desc": "體呈圓柱形，皮膚常因寄生橈足類而呈綠色或褐色。眼睛因寄生蟲感染常功能受損或失明。"
+    },
+    {
+      "title": "代謝與運動",
+      "desc": "新陳代謝率極低，生長速度極慢（每年約長1公分），游泳速度緩慢，依靠偷襲而非追捕獵物。"
+    },
+    {
+      "title": "抗凍適應",
+      "desc": "體液中含有高濃度的三甲胺氧化物(TMAO)和尿素，不僅作為抗凍劑，也使肉質對恆溫動物有毒。"
+    },
+    {
+      "title": "感官補償",
+      "desc": "視覺退化，但嗅覺極其靈敏，可能也依靠側線和電感受器在黑暗深海中定位獵物。"
+    }
+  ],
+  "behavior": [
+    {
+      "title": "覓食策略",
+      "desc": "機會主義者，食性廣泛，從沉睡的魚類、海豹、海洋哺乳動物屍體到北極熊殘骸都可能食用。"
+    },
+    {
+      "title": "深度變化",
+      "desc": "夏季可能到較深水域，冬季則會上浮至較淺的峽灣或冰層附近，甚至被發現在冰下活動。"
+    },
+    {
+      "title": "繁殖之謎",
+      "desc": "繁殖習性仍屬未知，推測為胎生，性成熟年齡極晚（可能超過150歲），幼鯊極少被觀察到。"
+    },
+    {
+      "title": "共生寄生",
+      "desc": "眼睛常被發光性的橈足類寄生，可能以此作為誘餌吸引獵物，形成奇特的共生或寄生關係。"
+    }
+  ],
+  "knowledge": [
+    {
+      "title": "長壽之秘",
+      "desc": "碳14定年法確認其壽命可達數百年。低代謝率、寒冷環境及緩慢生長可能是其長壽關鍵。"
+    },
+    {
+      "title": "歷史與傳說",
+      "desc": "因肉有毒，北歐傳統上會將肉發酵製成「冰島發酵鯊魚肉」(Hákarl)。因棲地偏遠，研究困難。"
+    },
+    {
+      "title": "生態重要性",
+      "desc": "作為北極深海的頂級清道夫和掠食者，在營養循環和清除腐肉方面扮演關鍵角色。"
+    },
+    {
+      "title": "氣候變遷影響",
+      "desc": "海水升溫可能威脅其棲息環境，並引入新的競爭物種，對其生存構成潛在風險。"
+    }
+  ],
+  "locations": [
+    {
+      "place": "格陵蘭",
+      "detail": "沿岸峽灣與大陸棚 (全年，深居簡出)"
+    },
+    {
+      "place": "冰島",
+      "detail": "北部與東部海域 (偶爾被深海漁船兼捕)"
+    },
+    {
+      "place": "加拿大",
+      "detail": "北極群島與聖羅倫斯灣深處 (研究稀少)"
+    },
+    {
+      "place": "挪威",
+      "detail": "斯瓦爾巴群島與北部峽灣 (偶有發現)"
+    },
+    {
+      "place": "北大西洋",
+      "detail": "深海海溝與海底山 (推測廣泛分佈但極難觀察)"
+    }
+  ],
+  "locationIntro": "格陵蘭睡鯊主要分佈於北大西洋及北極圈寒冷的深海水域，因其深居簡出，實際分佈範圍可能比已知更廣："
+},
+  {
+    "id": 5,
+    "name": "大王魷",
+    "scientific": "Architeuthis dux",
+    "category": "octopus",
+    "rarity": "very-rare",
+    "size": "large",
+    "depth": "midnight",
+    "social": "solitary",
+    "habitat": "deep-sea",
+    "traits": ["deep-sea", "predator", "large-eyes"],
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "description": "大王魷是最大的無脊椎動物之一，身長可達13公尺。牠們生活在深海，擁有動物界中最大的眼睛（直徑達27公分），以適應黑暗的深海環境。大王魷是抹香鯨的主要食物來源。",
+    "iucn": "DD",
+    "iucnText": "數據缺乏"
+  },
+  {
+    "id": 6,
+    "name": "綠蠵龜",
+    "scientific": "Chelonia mydas",
+    "category": "turtle",
+    "rarity": "uncommon",
+    "size": "medium",
+    "depth": "sunlight",
+    "social": "solitary",
+    "habitat": "coastal",
+    "traits": ["long-lived", "migratory", "endangered"],
+    "image": "https://images.unsplash.com/photo-1551085254-e96b210db58a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80",
+    "description": "綠蠵龜是海洋中的爬行動物，已經存在了超過1億年。它們會長距離遷徙回到出生地產卵。綠蠵龜面臨的主要威脅包括棲息地破壞、漁業副捕獲和海洋污染。",
+    "iucn": "EN",
+    "iucnText": "瀕危"
+  },
+  {
+    "id": 7,
+    "name": "小丑魚",
+    "scientific": "Amphiprioninae",
+    "category": "other",
+    "rarity": "common",
+    "size": "small",
+    "depth": "sunlight",
+    "social": "small-groups",
+    "habitat": "coral-reef",
+    "traits": ["symbiotic", "sequential-hermaphrodite"],
+    "image": "https://images.unsplash.com/photo-1581338834647-b5fb8e29d53b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "description": "小丑魚以其與海葵的共生關係而聞名。小丑魚體表有黏液保護，不受海葵刺細胞傷害，同時為海葵提供清潔和食物殘渣。小丑魚是順序性雌雄同體，群體中最大的個體會變成雌性。",
+    "iucn": "LC",
+    "iucnText": "無危"
+  },
+  {
+    "id": 8,
+    "name": "藍環章魚",
+    "scientific": "Hapalochlaena",
+    "category": "octopus",
+    "rarity": "uncommon",
+    "size": "micro",
+    "depth": "sunlight",
+    "social": "solitary",
+    "habitat": "coastal",
+    "traits": ["poisonous", "camouflage"],
+    "image": "https://images.unsplash.com/photo-1599236442363-9ec6d6ca6b8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "description": "藍環章魚體型雖小，卻是世界上最毒的海洋生物之一。當受到威脅時，牠們身上的藍色環會閃爍發光作為警告。其毒液含有河豚毒素，足以在幾分鐘內使人類致命。",
+    "iucn": "LC",
+    "iucnText": "無危"
+  },
+  {
+    "id": 9,
+    "name": "座頭鯨",
+    "scientific": "Megaptera novaeangliae",
+    "category": "whale",
+    "rarity": "rare",
+    "size": "giant",
+    "depth": "sunlight",
+    "social": "small-groups",
+    "habitat": "open-ocean",
+    "traits": ["acrobatic", "singing", "migratory"],
+    "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2053&q=80",
+    "description": "座頭鯨以其長胸鰭和複雜的歌聲聞名。牠們是著名的「海洋歌手」，雄性座頭鯨會唱出長達20分鐘的複雜歌曲。座頭鯨也是卓越的雜技演員，經常躍出水面拍打胸鰭和尾鰭。",
+    "iucn": "LC",
+    "iucnText": "無危"
+  }
+]
