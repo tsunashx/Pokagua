@@ -1,5 +1,5 @@
 :root {
-    --primary-blue: rgba(39, 131, 245, 1);
+    --primary-blue: rgb(5, 60, 126);
     --primary-yellow: rgba(255, 195, 0, 1);
     --white: #ffffff;
     --black: #1a1a1a;
@@ -618,7 +618,7 @@ main {
 .animal-card {
     background-color: var(--white);
     border-radius: 12px;
-    height:350px;
+    height:320px;
     overflow: hidden;
     box-shadow: var(--card-shadow);
     transition: var(--transition);
@@ -637,7 +637,7 @@ main {
 }
 
 .animal-info {
-    padding: 1.2rem;
+    padding: 0.4rem 1.5rem;
 }
 
 .animal-name {
